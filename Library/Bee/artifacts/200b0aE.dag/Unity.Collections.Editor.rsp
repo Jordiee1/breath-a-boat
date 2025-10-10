@@ -390,6 +390,7 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+-analyzer:"Assets/Asset - breath a boat/Unity.Burst.Unsafe.dll"
 "Library/PackageCache/com.unity.collections@56bff8827a7e/Unity.Collections.Editor/CLILeakDetectionSwitcher.cs"
 "Library/PackageCache/com.unity.collections@56bff8827a7e/Unity.Collections.Editor/JobsMenu.cs"
 -langversion:9.0

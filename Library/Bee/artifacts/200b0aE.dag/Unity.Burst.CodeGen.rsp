@@ -370,22 +370,27 @@
 -r:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Transactions.dll"
 -r:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.dll"
 -r:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/System.Xml.Linq.dll"
--r:"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
--r:"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
--r:"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
--r:"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+-r:"Assets/Asset - breath a boat/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
+-r:"Assets/Asset - breath a boat/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
+-r:"Assets/Asset - breath a boat/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
+-r:"Assets/Asset - breath a boat/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
 -r:"Library/PackageCache/com.unity.ext.nunit@031a54704bff/net40/unity-custom/nunit.framework.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/Unity.Burst.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
-"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/AssemblyResolver.cs"
-"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/BurstILPostProcessor.cs"
-"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/CecilExtensions.cs"
-"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/FunctionPointerInvokeTransform.cs"
-"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/GenericContext.cs"
-"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/ILPostProcessing.cs"
-"Library/PackageCache/com.unity.burst@6aff1dd08a0c/Unity.Burst.CodeGen/ILPostProcessingLegacy.cs"
+-analyzer:"Assets/Asset - breath a boat/Unity.Burst.CodeGen/Unity.Burst.Cecil.dll"
+-analyzer:"Assets/Asset - breath a boat/Unity.Burst.CodeGen/Unity.Burst.Cecil.Mdb.dll"
+-analyzer:"Assets/Asset - breath a boat/Unity.Burst.CodeGen/Unity.Burst.Cecil.Pdb.dll"
+-analyzer:"Assets/Asset - breath a boat/Unity.Burst.CodeGen/Unity.Burst.Cecil.Rocks.dll"
+-analyzer:"Assets/Asset - breath a boat/Unity.Burst.Unsafe.dll"
+"Assets/Asset - breath a boat/Unity.Burst.CodeGen/AssemblyResolver.cs"
+"Assets/Asset - breath a boat/Unity.Burst.CodeGen/BurstILPostProcessor.cs"
+"Assets/Asset - breath a boat/Unity.Burst.CodeGen/CecilExtensions.cs"
+"Assets/Asset - breath a boat/Unity.Burst.CodeGen/FunctionPointerInvokeTransform.cs"
+"Assets/Asset - breath a boat/Unity.Burst.CodeGen/GenericContext.cs"
+"Assets/Asset - breath a boat/Unity.Burst.CodeGen/ILPostProcessing.cs"
+"Assets/Asset - breath a boat/Unity.Burst.CodeGen/ILPostProcessingLegacy.cs"
 -langversion:9.0
 /unsafe+
 /deterministic
@@ -400,5 +405,4 @@
 /nowarn:1702
 /utf8output
 /preferreduilang:en-US
--warn:0
 /additionalfile:"Library/Bee/artifacts/200b0aE.dag/Unity.Burst.CodeGen.UnityAdditionalFile.txt"

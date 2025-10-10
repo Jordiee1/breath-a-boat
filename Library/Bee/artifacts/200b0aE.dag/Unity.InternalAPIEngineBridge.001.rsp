@@ -383,6 +383,7 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+-analyzer:"Assets/Asset - breath a boat/Unity.Burst.Unsafe.dll"
 "Library/PackageCache/com.unity.2d.common@f525660c63bc/Runtime/InternalBridge/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.2d.common@f525660c63bc/Runtime/InternalBridge/IAnimationPreviewable.cs"
 "Library/PackageCache/com.unity.2d.common@f525660c63bc/Runtime/InternalBridge/InternalEngineBridge.cs"

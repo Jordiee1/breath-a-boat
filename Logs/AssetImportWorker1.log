@@ -229,36 +229,44 @@ Received Import Request.
 Start importing Assets/Settings/UniversalRP.asset using Guid(681886c5eb7344803b6206f758bf0b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '910a3316ce45b604f98c2ad003aa3cfb') in 0.002432709 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-=========================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Packages/com.unity.2d.sprite/package.json
-  artifactKey: Guid(7dc5f1e5d04ac8549ac21802071e983b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/package.json using Guid(7dc5f1e5d04ac8549ac21802071e983b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3ff092d4ef983fd83ae1984946a9880a') in 0.000539 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/DefaultVolumeProfile.asset
-  artifactKey: Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e3ee85287093c2e01e2184a29fd3edf') in 0.000579667 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 450.574787 seconds.
-  path: Assets/Asset - breath a boat/banner/blank_banner2.png
-  artifactKey: Guid(b1b72f4479306461da45771591f2fd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset - breath a boat/banner/blank_banner2.png using Guid(b1b72f4479306461da45771591f2fd4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '26da54b99a1b9f0b761ee7bd2df23462') in 0.375080209 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Asset - breath a boat/banner/howtoplay.png
-  artifactKey: Guid(df4fbeacbdbaa4a6781461f72c7f3b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset - breath a boat/banner/howtoplay.png using Guid(df4fbeacbdbaa4a6781461f72c7f3b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3df5ac1ad066b4e0c5e2430ac3da1c7e') in 0.06606925 seconds
+Received Prepare
+Compilation Pipeline: Could not read file Packages/com.unity.burst/Runtime/Unity.Burst.asmdef
+Fatal Error! Compilation Pipeline: Could not read file Packages/com.unity.burst/Runtime/Unity.Burst.asmdef
+Obtained 32 stack frames.
+#0  0x0000018fc2a388 in __pthread_kill
+#1  0x0000018fb6ca3c in abort
+#2  0x00000107a6bdfc in __cxx_global_var_init.2
+#3  0x0000010655ee8c in EditorMonoConsole::LogToConsoleImplementation(CppLogEntry&)
+#4  0x0000010655e9d0 in EditorMonoConsole::LogToConsoleImplementation(DebugStringToFileData const&)
+#5  0x00000106560600 in LogToConsoleImplementation(DebugStringToFileData const&)
+#6  0x000001072da5fc in DebugStringToFilePostprocessedStacktrace(DebugStringToFileData const&)
+#7  0x000001072dae34 in DebugStringToFile(DebugStringToFileData const&)
+#8  0x00000106c10c80 in RegisterAssemblyDefinition(core::basic_string<char, core::StringStorageDefault<char>> const&)
+#9  0x00000106f83570 in UpdateScriptCompilationPipelineCaches(ScriptChanges const&, bool)
+#10 0x00000106e0d4fc in InitializeScriptPipelineCaches()
+#11 0x00000106e42764 in AssetImportWorkerClient::ReloadScriptingDomain()
+#12 0x00000106e5ea30 in invocation function for block in AssetImportWorkerClient::HandleMessage(PrepareMessage const&)::$_12::operator()() const
+#13 0x0000018fac585c in _dispatch_client_callout
+#14 0x0000018fabb880 in _dispatch_async_and_wait_invoke
+#15 0x0000018fac585c in _dispatch_client_callout
+#16 0x0000018fae2b80 in _dispatch_main_queue_drain.cold.5
+#17 0x0000018fabadb0 in _dispatch_main_queue_drain
+#18 0x0000018fabacec in _dispatch_main_queue_callback_4CF
+#19 0x0000018fd8cbe0 in __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__
+#20 0x0000018fd4d8dc in __CFRunLoopRun
+#21 0x0000018fd4ca98 in CFRunLoopRunSpecific
+#22 0x0000019b7ef27c in RunCurrentEventLoopInMode
+#23 0x0000019b7f24e8 in ReceiveNextEventCommon
+#24 0x0000019b97d484 in _BlockUntilNextEventMatchingListInModeWithFilter
+#25 0x00000193c71a34 in _DPSNextEvent
+#26 0x00000194610940 in -[NSApplication(NSEventRouting) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]
+#27 0x00000193c64be4 in -[NSApplication run]
+#28 0x00000193c3b2dc in NSApplicationMain
+#29 0x00000107a89114 in EditorMain(int, char const**)
+#30 0x00000107a89478 in main
+#31 0x0000018f8c2b98 in start
+baa4a6781461f72c7f3b08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3df5ac1ad066b4e0c5e2430ac3da1c7e') in 0.06606925 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================

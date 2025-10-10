@@ -392,6 +392,7 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+-analyzer:"Assets/Asset - breath a boat/Unity.Burst.Unsafe.dll"
 "Library/PackageCache/com.unity.render-pipelines.universal@dcd8a2aecf3e/Editor/Converter/PPv2/EffectConverters/BloomConverter.cs"
 "Library/PackageCache/com.unity.render-pipelines.universal@dcd8a2aecf3e/Editor/Converter/PPv2/EffectConverters/ChromaticAberrationConverter.cs"
 "Library/PackageCache/com.unity.render-pipelines.universal@dcd8a2aecf3e/Editor/Converter/PPv2/EffectConverters/ColorGradingConverter.cs"
