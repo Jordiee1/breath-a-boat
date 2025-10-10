@@ -7,7 +7,7 @@ Darwin version:          24.6.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        8192 MB
-Date:                    2025-10-10T06:16:46Z
+Date:                    2025-10-10T17:05:15Z
 Using pre-set license
 Pro License: YES
 
@@ -19,11 +19,11 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/jidapa/breath a boat
+/Users/jidapa/breath-a-boat
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53558
+59503
 -job-worker-count
 3
 -background-job-worker-count
@@ -31,8 +31,8 @@ Logs/AssetImportWorker0.log
 -gc-helper-count
 1
 -name AssetImport
-Successfully changed project path to: /Users/jidapa/breath a boat
-/Users/jidapa/breath a boat
+Successfully changed project path to: /Users/jidapa/breath-a-boat
+/Users/jidapa/breath-a-boat
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-allocator-temp-initial-block-size-main=262144"
     "memorysetup-allocator-temp-initial-block-size-worker=262144"
@@ -70,7 +70,7 @@ Successfully changed project path to: /Users/jidapa/breath a boat
     "memorysetup-temp-allocator-size-gfx=262144"
 Player connection [8552145088]  Target information:
 
-Player connection [8552145088]  * "[IP] 172.20.10.6 [Port] 0 [Flags] 2 [Guid] 2082109057 [EditorId] 2082109057 [Version] 1048832 [Id] OSXEditor(0,Macintosh-6.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8552145088]  * "[IP] 192.168.1.123 [Port] 0 [Flags] 2 [Guid] 4041083393 [EditorId] 4041083393 [Version] 1048832 [Id] OSXEditor(0,Macintosh-6.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
 Player connection [8552145088] Host joined multi-casting on [225.0.0.222:54997]...
 Player connection [8552145088] Host joined alternative multi-casting on [225.0.0.222:34997]...
@@ -85,11 +85,11 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 9.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 8.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.1.13f1 (418bd0acaa6b)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/jidapa/breath a boat/Assets
+[Subsystems] Discovering subsystems at path /Users/jidapa/breath-a-boat/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
  preferred device: Apple M2 (high power)
 Metal devices available: 1
@@ -100,43 +100,43 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56288
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56694
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000668 seconds.
-- Loaded All Assemblies, in  0.681 seconds
+Registered in 0.001060 seconds.
+- Loaded All Assemblies, in  0.412 seconds
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.677 seconds
-Domain Reload Profiling: 1358ms
-	BeginReloadAssembly (202ms)
+- Finished resetting the current domain, in  0.280 seconds
+Domain Reload Profiling: 693ms
+	BeginReloadAssembly (182ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (74ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (83ms)
-	LoadAllAssembliesAndSetupDomain (297ms)
-		LoadAssemblies (200ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (145ms)
+		LoadAssemblies (182ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (293ms)
-			TypeCache.Refresh (291ms)
-				TypeCache.ScanAssembly (265ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (139ms)
+				TypeCache.ScanAssembly (123ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (678ms)
+	FinalizeReload (281ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (559ms)
+		SetupLoadedEditorAssemblies (241ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (84ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (139ms)
-			ProcessInitializeOnLoadAttributes (194ms)
-			ProcessInitializeOnLoadMethodAttributes (131ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (88ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -145,43 +145,43 @@ Domain Reload Profiling: 1358ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.608 seconds
-Refreshing native plugins compatible for Editor in 1.55 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.613 seconds
+Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.599 seconds
-Domain Reload Profiling: 3207ms
-	BeginReloadAssembly (292ms)
+- Finished resetting the current domain, in  0.600 seconds
+Domain Reload Profiling: 1209ms
+	BeginReloadAssembly (118ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (14ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (98ms)
-	RebuildCommonClasses (70ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (63ms)
-	LoadAllAssembliesAndSetupDomain (1158ms)
-		LoadAssemblies (638ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (430ms)
+		LoadAssemblies (252ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (620ms)
-			TypeCache.Refresh (459ms)
-				TypeCache.ScanAssembly (413ms)
-			BuildScriptInfoCaches (118ms)
-			ResolveRequiredComponents (32ms)
-	FinalizeReload (1600ms)
+		AnalyzeDomain (224ms)
+			TypeCache.Refresh (181ms)
+				TypeCache.ScanAssembly (161ms)
+			BuildScriptInfoCaches (32ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (600ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1329ms)
+		SetupLoadedEditorAssemblies (489ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (11ms)
-			BeforeProcessingInitializeOnLoad (375ms)
-			ProcessInitializeOnLoadAttributes (762ms)
-			ProcessInitializeOnLoadMethodAttributes (176ms)
+			InitializePlatformSupportModulesInManaged (1ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (104ms)
+			ProcessInitializeOnLoadAttributes (290ms)
+			ProcessInitializeOnLoadMethodAttributes (88ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
 WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
@@ -189,74 +189,170 @@ WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wirefr
 WARNING: Shader Did you use #pragma only_renderers and omit this platform?
 WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
 Launching external process: /Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.52 seconds
-Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.26 seconds
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6600 unused Assets / (2.1 MB). Loaded Objects now: 7310.
-Memory consumption went from 134.8 MB to 132.7 MB.
-Total: 47.747416 ms (FindLiveObjects: 7.916166 ms CreateObjectMapping: 1.103500 ms MarkObjects: 33.263709 ms  DeleteObjects: 5.462833 ms)
+Unloading 6713 unused Assets / (3.2 MB). Loaded Objects now: 7424.
+Memory consumption went from 135.5 MB to 132.3 MB.
+Total: 37.472708 ms (FindLiveObjects: 6.926667 ms CreateObjectMapping: 0.864625 ms MarkObjects: 24.732375 ms  DeleteObjects: 4.944917 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12592.201185 seconds.
-  path: Assets/InputSystem_Actions.inputactions
-  artifactKey: Guid(2bcd2660ca9b64942af0de543d8d7100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InputSystem_Actions.inputactions using Guid(2bcd2660ca9b64942af0de543d8d7100) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4b247e7907b7d4a86176f4ae684b564d') in 0.071707584 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 19
+  Time sin========================================================================
+Received Import Request.
+  Time since last request: 130.848878 seconds.
+  path: Assets/DefaultVolumeProfile.asset
+  artifactKey: Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e3ee85287093c2e01e2184a29fd3edf') in 0.081206542 seconds
+Number of updated asset objects reloaded before import = 51Number of asset objects unloaded after import = 0
 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x17f6d3000 may have been prematurely finalized
-- Loaded All Assemblies, in  1.336 seconds
-Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
-Native extension for OSXStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.419 seconds
-Domain Reload Profiling: 2759ms
-	BeginReloadAssembly (378ms)
-		ExecutionOrderSort (1ms)
-		DisableScriptedObjects (39ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (137ms)
-	RebuildCommonClasses (52ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (859ms)
-		LoadAssemblies (461ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (496ms)
-			TypeCache.Refresh (354ms)
-				TypeCache.ScanAssembly (307ms)
-			BuildScriptInfoCaches (117ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (1420ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1130ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (274ms)
-			ProcessInitializeOnLoadAttributes (733ms)
-			ProcessInitializeOnLoadMethodAttributes (108ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (27ms)
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-WARNING: Shader Unsupported: 'Universal Render Pipeline/VR/SpatialMapping/Wireframe' - All subshaders removed
-WARNING: Shader Did you use #pragma only_renderers and omit this platform?
-WARNING: Shader If subshaders removal was intentional, you may have forgotten turning Fallback off?
-Refreshing native plugins compatible for Editor in 0.92 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6711 unused Assets / (2.9 MB). Loaded Objects now: 7430.
-Memory consumption went from 143.8 MB to 140.9 MB.
-Total: 16.000417 ms (FindLiveObjects: 1.734167 ms CreateObjectMapping: 0.719208 ms MarkObjects: 10.445250 ms  DeleteObjects: 3.101125 ms)
+Received Import Request.
+  Time since last request: 0.000529 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6605546f55a9573f2cd4c7d5891b31f') in 0.000658125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.493374 seconds.
+  path: Assets/Settings/Lit2DSceneTemplate.scenetemplate
+  artifactKey: Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Settings/Lit2DSceneTemplate.scenetemplate using Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '36a15cb362da640285281d0796865c37') in 0.223388========================================================================
+Received Import Request.
+  Time since last request: 447.707582 seconds.
+  path: Assets/Asset - breath a boat/UI
+  artifactKey: Guid(af20758d93259464ebd2d2170e0b422d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/UI using Guid(af20758d93259464ebd2d2170e0b422d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '06ff1e95fb66cd2b951394ebabf14a66') in 0.005420417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.055445 seconds.
+  path: Assets/Asset - breath a boat/Sound
+  artifactKey: Guid(ebd1858fa42b4465db663d7c24c2bd90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/Sound using Guid(ebd1858fa42b4465db663d7c24c2bd90) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5d279e900c358f6f00683a1af4bd45cf') in 0.000289875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.502339 seconds.
+  path: Assets/Asset - breath a boat/banner/blank_banner.png
+  artifactKey: Guid(679e71002b2a84d6fbca64dc0c83c640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/banner/blank_banner.png using Guid(679e71002b2a84d6fbca64dc0c83c640) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '34625a70fe2d017c9227bdb2b597de61') in 0.3210015 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Asset - breath a boat/banner/cover.png
+  artifactKey: Guid(29da9ce0407b64ab78844af6f8bcbb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/banner/cover.png using Guid(29da9ce0407b64ab78844af6f8bcbb7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '64f5de372fefa6fd655a2ee930c90c2f') in 0.041941625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Asset - breath a boat/banner/timeup_banner.png
+  artifactKey: Guid(bff444c25c99b4f4fa3671682f279dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/banner/timeup_banner.png using Guid(bff444c25c99b4f4fa3671682f279dab) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '93a7ca690ac4f6ecbbccb070799f7060') in 0.019146875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Asset - breath a boat/banner/tutorial_graphic1.png
+  artifactKey: Guid(f82ff8e55aa29421f83d58725a032f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/banner/tutorial_graphic1.png using Guid(f82ff8e55aa29421f83d58725a032f0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86596d283cc2a5bfcecef3fea71c1016') in 0.158967042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 88
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Asset - breath a boat/banner/tutorial1.png
+  artifactKey: Guid(f263f2f4359864611b6ba86ce5ea02d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/banner/tutorial1.png using Guid(f263f2f4359864611b6ba86ce5ea02d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '30e40eac2a65824385b49a506e28e0d5') in 0.009946334 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Asset - breath a boat/banner/tutorial3.png
+  artifactKey: Guid(b857e7862e2b845ac85cb08f461ef8b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/banner/tutorial3.png using Guid(b857e7862e2b845ac85cb08f461ef8b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c63f25ed01b557a94a49575b88a39fe') in 0.013006625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Asset - breath a boat/banner/tutorial2.png
+  artifactKey: Guid(157123558dbb1470baaecc5eb5f5f259) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/banner/tutorial2.png using Guid(157123558dbb1470baaecc5eb5f5f259) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99b9885a778728d7b7e82297835a6f96') in 0.012111083 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.552981 seconds.
+  path: Assets/Asset - breath a boat/Graphic/BG.png
+  artifactKey: Guid(1888fb04d0808419da73cb9f21d08eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/Graphic/BG.png using Guid(1888fb04d0808419da73cb9f21d08eef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6018ca9a6e2e36bbf9b07d33259a3cc3') in 0.037515625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Asset - breath a boat/Graphic/Logo_Breath-a-boat.png
+  artifactKey: Guid(3385d89a91e8343a3a126ac9205e98b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/Graphic/Logo_Breath-a-boat.png using Guid(3385d89a91e8343a3a126ac9205e98b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1732342222da5c28b7dd121d78e39694') in 0.016268875 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.642477 seconds.
+  path: Assets/Asset - breath a boat/score/+10_2.png
+  artifactKey: Guid(fc71da5845d894f88a5a5c2d9e9193a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/score/+10_2.png using Guid(fc71da5845d894f88a5a5c2d9e9193a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81d4192fc7433e8f84898ba1e3cc13b8') in 0.028910208 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Asset - breath a boat/score/+100_2.png
+  artifactKey: Guid(06cbd6e2a23b94867a6e42c5bb14a121) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/score/+100_2.png using Guid(06cbd6e2a23b94867a6e42c5bb14a121) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c5af98f4dd8bfee66925ce1eadf81b44') in 0.013557417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 6
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Asset - breath a boat/score/+25_2.png
+  artifactKey: Guid(5b57bfb7f4da24c4fb9bc553d678f975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/score/+25_2.png using Guid(5b57bfb7f4da24c4fb9bc553d678f975) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10bc1434cc59898edf70e57abab5164f') in 0.009083583 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Asset - breath a boat/score/-5.png
+  artifactKey: Guid(64aaa409cf0f2425eaa4a6440e2d4e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/score/-5.png using Guid(64aaa409cf0f2425eaa4a6440e2d4e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ebf501a621e22a2a0473dab28031c4e2') in 0.008826 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Asset - breath a boat/score/+50.png
+  artifactKey: Guid(01dd611e7175f499a83287fcff19aba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/score/+50.png using Guid(01dd611e7175f499a83287fcff19aba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '35e0d56c5804a9f0cd0c5082c7b85597') in 0.007019417 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Asset - breath a boat/score/+50_2.png
+  artifactKey: Guid(8f3aedfde6ec7479cb94e985b916cd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset - breath a boat/score/+50_2.png using Guid(8f3aedfde6ec7479cb94e985b916cd16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7a83d2b56067e4482bec7205faa645da') in 0.008418625 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
