@@ -388,7 +388,6 @@
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/6000.1.13f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
--analyzer:"Assets/Asset - breath a boat/Unity.Burst.Unsafe.dll"
 "Library/PackageCache/com.unity.2d.sprite@5eb30061d420/Editor/AssemblyInfo.cs"
 "Library/PackageCache/com.unity.2d.sprite@5eb30061d420/Editor/Interface/IAssetDatabase.cs"
 "Library/PackageCache/com.unity.2d.sprite@5eb30061d420/Editor/Interface/IEvent.cs"
