@@ -106,12 +106,12 @@ TextureImporter:
       name: Logo_Breath-a-boat_0
       rect:
         serializedVersion: 2
-        x: 65
-        y: 42
-        width: 2164
+        x: 44
+        y: 50
+        width: 2386
         height: 1206
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -133,7 +133,7 @@ TextureImporter:
         width: 323
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4d784aa9f23fd41b5a9290d44f30438e
     internalID: 0
     vertices: []
     indices: 
