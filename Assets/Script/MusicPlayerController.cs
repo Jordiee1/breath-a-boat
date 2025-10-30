@@ -2,22 +2,47 @@ using UnityEngine;
 
 public class MusicPlayerController : MonoBehaviour
 {
-    private static MusicPlayerController instance = null;
+    // ตัวแปรสาธารณะให้เข้าถึง Instance ได้ง่าย
+    public static MusicPlayerController Instance { get; private set; } 
+    
+    private AudioSource audioSource;
+    private bool isMusicPlaying = true; // สถานะเริ่มต้นคือเปิดเพลง
 
     void Awake()
     {
-        // ตรวจสอบว่ามี Object นี้อยู่แล้วหรือไม่ (เพื่อป้องกันเพลงซ้อนกัน)
-        if (instance == null)
+        // ... (โค้ดเดิมสำหรับ Singleton และ DontDestroyOnLoad)
+        if (Instance == null)
         {
-            // ถ้ายังไม่มี ให้กำหนดให้ตัวเองเป็น instance แรก
-            instance = this;
-            // และสั่งให้ Object นี้ไม่ถูกทำลายเมื่อโหลดซีนใหม่
+            Instance = this;
             DontDestroyOnLoad(gameObject);
+            audioSource = GetComponent<AudioSource>(); // เก็บ AudioSource ไว้
         }
-        else if (instance != this)
+        else if (Instance != this)
         {
-            // ถ้ามี Object นี้อยู่แล้ว (เช่น มาจาก HomeScene เก่า) ให้ทำลายตัวเองทันที
             Destroy(gameObject);
         }
+    }
+
+    // ฟังก์ชันใหม่สำหรับปิด/เปิดเสียงเพลง (ใช้สำหรับปุ่ม)
+    public void ToggleMusic()
+    {
+        if (audioSource == null) return;
+        
+        isMusicPlaying = !isMusicPlaying;
+
+        if (isMusicPlaying)
+        {
+            audioSource.UnPause();
+        }
+        else
+        {
+            audioSource.Pause();
+        }
+    }
+    
+    // ฟังก์ชันนี้จะส่งสถานะปัจจุบันกลับไปให้ HomeSceneController ใช้ในการสลับกราฟิก
+    public bool IsMusicPlaying()
+    {
+        return isMusicPlaying;
     }
 }

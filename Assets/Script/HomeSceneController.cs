@@ -50,23 +50,31 @@ public class HomeSceneController : MonoBehaviour
     }
 
     private void OnSoundButtonClick()
+{
+    // 1. ตรวจสอบว่า MusicPlayerController มีอยู่จริงหรือไม่
+    if (MusicPlayerController.Instance == null)
     {
-        if (gameSound == null)
-        {
-            return;
-        }
-        isSoundOn = !isSoundOn;
-        if (isSoundOn)
-        {
-            gameSound.UnPause();
-            soundButton.GetComponent<Image>().sprite = sound_on_graphic;
-        }
-        else
-        {
-            gameSound.Pause();
-            soundButton.GetComponent<Image>().sprite = sound_mute_graphic;
-        }
+        Debug.LogWarning("MusicPlayerController is not found.");
+        return;
     }
+
+    // 2. สั่งให้ MusicPlayerController ปิด/เปิดเพลง
+    MusicPlayerController.Instance.ToggleMusic();
+
+    // 3. สลับกราฟิกปุ่มตามสถานะใหม่
+    bool isPlaying = MusicPlayerController.Instance.IsMusicPlaying();
+
+    if (isPlaying)
+    {
+        // ถ้าเปิดเพลง
+        soundButton.GetComponent<Image>().sprite = sound_on_graphic;
+    }
+    else
+    {
+        // ถ้าปิดเพลง
+        soundButton.GetComponent<Image>().sprite = sound_mute_graphic;
+    }
+}
 
     private void OnTutorialButtonClick()
     {
