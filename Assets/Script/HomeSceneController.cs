@@ -44,42 +44,46 @@ public class HomeSceneController : MonoBehaviour
 
     private void OnPlayButtonClick()
     {
-        // เปลี่ยนกราฟิกและโหลดซีน
+        // เปลี่ยนกราฟิกปุ่มกด
         playButton.GetComponent<Image>().sprite = play_press_graphic;
-        SceneManager.LoadScene("TutorialScene");
+
+        // โหลดซีน HowToPlayScene แทน TutorialScene
+        SceneManager.LoadScene("HowToPlayScene"); // <-- แก้ไขตรงนี้
     }
 
-    private void OnSoundButtonClick()
-{
-    // 1. ตรวจสอบว่า MusicPlayerController มีอยู่จริงหรือไม่
-    if (MusicPlayerController.Instance == null)
-    {
-        Debug.LogWarning("MusicPlayerController is not found.");
-        return;
-    }
-
-    // 2. สั่งให้ MusicPlayerController ปิด/เปิดเพลง
-    MusicPlayerController.Instance.ToggleMusic();
-
-    // 3. สลับกราฟิกปุ่มตามสถานะใหม่
-    bool isPlaying = MusicPlayerController.Instance.IsMusicPlaying();
-
-    if (isPlaying)
-    {
-        // ถ้าเปิดเพลง
-        soundButton.GetComponent<Image>().sprite = sound_on_graphic;
-    }
-    else
-    {
-        // ถ้าปิดเพลง
-        soundButton.GetComponent<Image>().sprite = sound_mute_graphic;
-    }
-}
+    // ... (โค้ดเดิม)
 
     private void OnTutorialButtonClick()
     {
-        // เปลี่ยนกราฟิกและโหลดซีน
+        // ปุ่ม Tutorial ยังคงโหลด TutorialScene เหมือนเดิม
         tutorialButton.GetComponent<Image>().sprite = tutorial_press_graphic;
-        SceneManager.LoadScene("TutorialScene");
+        SceneManager.LoadScene("TutorialScene"); // <-- ใช้ชื่อซีนเดิม
     }
+    private void OnSoundButtonClick()
+    {
+        // 1. ตรวจสอบว่า MusicPlayerController มีอยู่จริงหรือไม่
+        if (MusicPlayerController.Instance == null)
+        {
+            Debug.LogWarning("MusicPlayerController is not found.");
+            return;
+        }
+
+        // 2. สั่งให้ MusicPlayerController ปิด/เปิดเพลง
+        MusicPlayerController.Instance.ToggleMusic();
+
+        // 3. สลับกราฟิกปุ่มตามสถานะใหม่
+        bool isPlaying = MusicPlayerController.Instance.IsMusicPlaying();
+
+        if (isPlaying)
+        {
+            // ถ้าเปิดเพลง
+            soundButton.GetComponent<Image>().sprite = sound_on_graphic;
+        }
+        else
+        {
+            // ถ้าปิดเพลง
+            soundButton.GetComponent<Image>().sprite = sound_mute_graphic;
+        }
+    }
+
 }
